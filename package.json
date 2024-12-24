@@ -14,6 +14,7 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache"
   },
   "dependencies": {
+    "@cloudflare/next-on-pages": "^1.13.7",
     "@imgly/background-removal": "^1.5.5",
     "@imgly/background-removal-data": "^1.4.5",
     "@midudev/tailwind-animations": "^0.0.7",
