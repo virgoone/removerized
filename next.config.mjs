@@ -13,9 +13,9 @@ const withSerwist = withSerwistInit({
 export default withSerwist({
 
   reactStrictMode: true,
-  // serverRuntimeConfig: {
-  //   runtime: "edge"
-  // },
+  serverRuntimeConfig: {
+    runtime: "edge"
+  },
   images: {
     dangerouslyAllowSVG: true,
     remotePatterns: [
