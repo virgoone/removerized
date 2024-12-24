@@ -61,7 +61,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head>
           <Script
             async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5245068093651973"
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3801577709600181"
             crossOrigin="anonymous"
             strategy="lazyOnload"
           />
@@ -83,7 +83,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             </ThemeProvider>
           </TooltipProvider>
         </body>
-        <GoogleAnalytics gaId="G-20G8R0K6W9" />
+        <GoogleAnalytics gaId="G-CYYTMZ59MC" />
       </html>
     </>
   )
