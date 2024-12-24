@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 "use client"
 
 import { FormEvent, useEffect, useRef, useState } from "react"
@@ -42,7 +41,6 @@ import { Progress } from "@/components/ui/progress"
 import { Icons } from "@/components/icons"
 import { Loader } from "@/components/loader"
 
-import AdBanner from "./ads/ad-banner"
 import ImageSettings from "./settings/ImageSettings"
 import { ThemeToggle } from "./theme-toggle"
 
@@ -159,7 +157,7 @@ export const Editor = () => {
     let config: Config = {
       model: "isnet",
       debug: true,
-      //publicPath: "http://localhost:3000/ai-data/", // path to the wasm files
+      publicPath: "http://localhost:3001/ai-data/", // path to the wasm files
       progress: (key, current, total) => {
         setDialogProgress(current)
         setDialogTotal(total)
@@ -454,7 +452,6 @@ export const Editor = () => {
                 </p>
               )}
 
-              <AdBanner></AdBanner>
             </div>
 
             {/* Image Queue */}

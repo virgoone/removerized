@@ -13,9 +13,9 @@ const withSerwist = withSerwistInit({
 export default withSerwist({
 
   reactStrictMode: true,
-  serverRuntimeConfig: {
-    runtime: "edge"
-  },
+  // serverRuntimeConfig: {
+  //   runtime: "edge"
+  // },
   images: {
     dangerouslyAllowSVG: true,
     remotePatterns: [
@@ -24,6 +24,15 @@ export default withSerwist({
         hostname: "**",
       },
     ],
+  },
+  webpack: (config) => {
+    // See https://webpack.js.org/configuration/resolve/#resolvealias
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "sharp$": false,
+      "onnxruntime-node$": false,
+    }
+    return config;
   },
 
 });
